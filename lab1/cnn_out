@@ -1,0 +1,69 @@
+Dataset: mnist_d
+Shape of xTrain dataset: (60000, 28, 28).
+Shape of yTrain dataset: (60000,).
+Shape of xTest dataset: (10000, 28, 28).
+Shape of yTest dataset: (10000,).
+New shape of xTrain dataset: (60000, 28, 28, 1).
+New shape of xTest dataset: (10000, 28, 28, 1).
+New shape of yTrain dataset: (60000, 10).
+New shape of yTest dataset: (10000, 10).
+Building and training TF_CNN.
+Testing TF_CNN.
+Classifier algorithm: tf_conv
+Classifier accuracy: 99.370000%
+
+Dataset: mnist_f
+Shape of xTrain dataset: (60000, 28, 28).
+Shape of yTrain dataset: (60000,).
+Shape of xTest dataset: (10000, 28, 28).
+Shape of yTest dataset: (10000,).
+New shape of xTrain dataset: (60000, 28, 28, 1).
+New shape of xTest dataset: (10000, 28, 28, 1).
+New shape of yTrain dataset: (60000, 10).
+New shape of yTest dataset: (10000, 10).
+Building and training TF_CNN.
+Testing TF_CNN.
+Classifier algorithm: tf_conv
+Classifier accuracy: 91.710000%
+
+Dataset: cifar_10
+Shape of xTrain dataset: (50000, 32, 32, 3).
+Shape of yTrain dataset: (50000, 1).
+Shape of xTest dataset: (10000, 32, 32, 3).
+Shape of yTest dataset: (10000, 1).
+New shape of xTrain dataset: (50000, 32, 32, 3).
+New shape of xTest dataset: (10000, 32, 32, 3).
+New shape of yTrain dataset: (50000, 10).
+New shape of yTest dataset: (10000, 10).
+Building and training TF_CNN.
+Testing TF_CNN.
+Classifier algorithm: tf_conv
+Classifier accuracy: 76.060000%
+
+Dataset: cifar_100_f
+Shape of xTrain dataset: (50000, 32, 32, 3).
+Shape of yTrain dataset: (50000, 1).
+Shape of xTest dataset: (10000, 32, 32, 3).
+Shape of yTest dataset: (10000, 1).
+New shape of xTrain dataset: (50000, 32, 32, 3).
+New shape of xTest dataset: (10000, 32, 32, 3).
+New shape of yTrain dataset: (50000, 100).
+New shape of yTest dataset: (10000, 100).
+Building and training TF_CNN.
+Testing TF_CNN.
+Classifier algorithm: tf_conv
+Classifier accuracy: 42.560000%
+
+Dataset: cifar_100_c
+Shape of xTrain dataset: (50000, 32, 32, 3).
+Shape of yTrain dataset: (50000, 1).
+Shape of xTest dataset: (10000, 32, 32, 3).
+Shape of yTest dataset: (10000, 1).
+New shape of xTrain dataset: (50000, 32, 32, 3).
+New shape of xTest dataset: (10000, 32, 32, 3).
+New shape of yTrain dataset: (50000, 100).
+New shape of yTest dataset: (10000, 100).
+Building and training TF_CNN.
+Testing TF_CNN.
+Classifier algorithm: tf_conv
+Classifier accuracy: 54.450000%
