@@ -37,7 +37,7 @@ elif DATASET == "mnist_f":
     IW = 28
     IZ = 1
     IS = 784
-    EP = 25
+    EP = 18
 elif DATASET == "cifar_10":
     NUM_CLASSES = 10
     IH = 32
@@ -85,7 +85,7 @@ def buildTFNeuralNet(x, y, eps=25):
     # model.compile(optimizer='adam', loss='categorical_crossentropy')
     opt = keras.optimizers.SGD(lr=0.01, momentum=0.9, decay=0.01 / eps)
     model.compile(optimizer='adam', loss='categorical_crossentropy', metrics=['accuracy'])
-    model.fit(x, y, batch_size=32, epochs=eps, verbose=1)
+    model.fit(x, y, batch_size=32, epochs=eps, verbose=0)
     return model
 
 
@@ -241,7 +241,7 @@ def main():
     IW = 28
     IZ = 1
     IS = 784
-    EP = 25
+    EP = 18
     raw = getRawData()
     data = preprocessData(raw)
     model = trainModel(data[0])
@@ -287,7 +287,7 @@ def main():
     preds = runModel(data[1][0], model)
     result.append(evalResults(data[1], preds))
 
-    plt.plot(seq, result, label='Accuracy')
+    plt.bar(seq, result, label='Accuracy')
     plt.ylabel("Accuracy")
     plt.legend()
     if ALGORITHM == "tf_conv":

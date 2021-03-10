@@ -24,7 +24,7 @@ New shape of yTest dataset: (10000, 10).
 Building and training TF_CNN.
 Testing TF_CNN.
 Classifier algorithm: tf_conv
-Classifier accuracy: 91.710000%
+Classifier accuracy: 92.230000%
 
 Dataset: cifar_10
 Shape of xTrain dataset: (50000, 32, 32, 3).
